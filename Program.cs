@@ -4,8 +4,6 @@ namespace Decisoes
 {
     class Program
     {
-        private const int V = 10;
-
         static void Main(string[] args)
         {
             decimal n1, n2, n3, n4, resu;
