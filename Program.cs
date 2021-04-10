@@ -4,6 +4,8 @@ namespace Decisoes
 {
     class Program
     {
+        private const int V = 10;
+
         static void Main(string[] args)
         {
             decimal n1, n2, n3, n4, resu;
@@ -20,11 +22,12 @@ namespace Decisoes
             Console.Write("Digite o quarto número..: ");
             n4 = Convert.ToDecimal(Console.ReadLine());
 
+            Console.WriteLine();
+
                 resu = (n1 + n2 + n3 + n4) / 4;
 
                 if (resu > 6 && resu <= 10) {
 
-                     Console.WriteLine();
 
                      Console.WriteLine($"Sua nota é {resu:N1}");
 
@@ -36,7 +39,6 @@ namespace Decisoes
 
                 } else if (resu < 5 && resu >= 0) {
                     
-                    Console.WriteLine();
 
                     Console.WriteLine($"Sua nota é {resu:N1}");
 
@@ -49,7 +51,6 @@ namespace Decisoes
 
                 } else if (resu >= 5 && resu <= 6) {       
 
-                    Console.WriteLine();
 
                     Console.Write($"Sua nota é {resu:N1}");
 
@@ -60,9 +61,7 @@ namespace Decisoes
                     Console.ResetColor();
 
                 } else if (resu < 0 && resu > 10) {
-
-                    Console.WriteLine();
-
+            
                     Console.Write($" INVÁLIDO. ({resu:N1})");
 
                     Console.WriteLine();
