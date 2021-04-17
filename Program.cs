@@ -58,9 +58,10 @@ namespace Decisoes
                     Console.WriteLine("Você está em recuperação. Estude mais!");
                     Console.ResetColor();
 
-                } else if (resu < 0 && resu > 10) {
+                       
+                } else {
             
-                    Console.Write($" INVÁLIDO. ({resu:N1})");
+                    Console.Write($" INVÁLIDO.");
 
                     Console.WriteLine();
 
